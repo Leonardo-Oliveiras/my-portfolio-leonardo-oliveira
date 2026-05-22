@@ -1,0 +1,9 @@
+export { HeroSection } from './hero-section';
+export { TechCarousel } from './tech-carousel';
+export { AboutSection } from './about-section';
+export { HowIWorkSection } from './how-i-work-section';
+export { ExperienceSection } from './experience-section';
+export { ProjectsSection } from './projects-section';
+export { QualitySection } from './quality-section';
+export { AISection } from './ai-section';
+export { ContactSection } from './contact-section';

@@ -23,6 +23,7 @@ export function ProjectImage({ image, accent }: ProjectImageProps) {
         alt=""
         fill
         sizes="(max-width: 1024px) 100vw, 400px"
+        quality={75}
         loading="lazy"
         className="object-cover transition-transform duration-500 group-hover:scale-[1.03]"
       />

@@ -69,7 +69,7 @@ export function HeroSection() {
 
               <HeroProfileImage
                 className={cn(
-                  'shrink-0 rounded-full border-2 border-border/50',
+                  'rounded-full border-2 border-border/50',
                   'w-16 h-16 max-[499px]:mx-auto',
                   'min-[500px]:w-16 min-[500px]:h-16 md:w-20 md:h-20',
                 )}
@@ -125,15 +125,10 @@ export function HeroSection() {
               {t.hero.subtitle}
             </motion.p>
 
-            {/* Description */}
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.9 }}
-              className="text-base md:text-lg text-muted-foreground/80 leading-relaxed max-w-2xl mb-12"
-            >
+            {/* Description — no enter animation so LCP text paints without ~1s Framer delay */}
+            <p className="text-base md:text-lg text-muted-foreground/80 leading-relaxed max-w-2xl mb-12">
               {t.hero.description}
-            </motion.p>
+            </p>
 
             {/* CTA Buttons */}
             <motion.div

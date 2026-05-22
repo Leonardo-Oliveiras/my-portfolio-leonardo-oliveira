@@ -178,7 +178,8 @@ export function AboutSection() {
                   src="/images/cats.webp"
                   alt={t.about.interests.cats}
                   fill
-                  sizes="(max-width: 1024px) 100vw, 480px"
+                  sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 480px"
+                  quality={75}
                   loading="lazy"
                   className="object-cover"
                 />
